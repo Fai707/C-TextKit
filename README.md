@@ -14,3 +14,8 @@ Usage: trimcli [option] "text"
 ```sh
 Usage: bufcopy CAPACITY "text"
 ```
+
+## argsplit.c:
+```sh
+Usage: argsplit "text"
+```
