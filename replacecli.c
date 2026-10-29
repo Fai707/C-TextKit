@@ -18,6 +18,7 @@ int main(int argc, char *argv[]){
         write++;
         start++;
     }
+    *write = '\0';
 
     printf("%s", destination);
 }
