@@ -7,6 +7,11 @@ int main(int argc, char *argv[]){
         return 1;
     }
 
+    if(strlen(argv[2]) != 1 || strlen(argv[3]) != 1){
+        fprintf(stderr, "Error: input too long (maximum 1 characters)\n");
+        return 1; 
+    }
+
     char destination[256];
     size_t length = strlen(argv[1]);
         if (length >= sizeof destination) {
@@ -18,7 +23,7 @@ int main(int argc, char *argv[]){
     char *from = argv[2];
     char *to = argv[3];
     char *write = destination;
-    
+
     while(*start != '\0'){
         if(*start == *from){
             *write = *to;
