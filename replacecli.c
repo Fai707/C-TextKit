@@ -2,6 +2,7 @@
 
 int main(int argc, char *argv[]){
     if(argc != 4){
+        fprintf(stderr, "Usage: replacecli \"text\" from to\n");
         return 1;
     }
     char *start = argv[1];
