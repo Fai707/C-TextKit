@@ -19,3 +19,8 @@ Usage: bufcopy CAPACITY "text"
 ```sh
 Usage: argsplit "text"
 ```
+
+## replacecli.c:
+```sh
+Usage: replacecli "text" from to
+```
